@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>가상선택자</title>
+    <style>
+        a:link{ /* 링크 자체 */
+            color: pink;
+            text-decoration: none; /* 언더라인 제거 */
+        }
+        a:visited{/* 링크를 누른 후  */
+            color: skyblue;
+        }
+        a:hover{/* 마우스를 올렸을 때 */
+            text-decoration: overline;
+        }
+        a:active{/* 마우스를 누를 때 */
+            background-color: yellow;
+        }
+        div.box1{
+            border: 1px dashed red;
+            width: 400px;
+            background-color: #FFD9FA;
+        }
+        div.box1:hover{
+            border: 1px solid blue;
+            width: 800px;
+            padding: 5px;
+            background-color: #B2CCFF;
+        }
+        div.box2{
+            margin-top: 20px;
+            border: 1px dashed green;
+            width: 400px;
+            background-color: #E4F7BA;
+        }
+        div.box2:hover{
+            border: 1px solid purple;
+            width: 800px;
+            padding: 5px;
+            background-color: #E8D9FF;
+        }
+    </style>
+</head>
+<body>
+    <h2>이벤트에 대한 이해</h2>
+    <p><a href="css3.html">선택자 이동</a> : 링크의 변화</p>
+    <div class="box1">
+        <h3>가상 클래스 1영역</h3>
+        마우스 위치에 따른 박스의 스타일 변화를 보세요^^
+    </div>
+    <div class="box2">
+        <h3>가상 클래스 2영역</h3>
+        마우스 위치에 따른 박스의 스타일 변화를 보세요^^
+    </div>
+</body>
+</html>

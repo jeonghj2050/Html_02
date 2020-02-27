@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>선택자</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <style>
+        div.box1{
+            border: 1px deeppink solid;
+        }
+        div#box3{
+            color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        선택자
+        1) 기본태그
+            table, tr, td {}
+
+        2) class 선택자(자바의 클래스 아님)
+            .box1 {}
+        
+        3) id 선택자 (하나만 명명 -> 중복되면 자바스크립트 사용시 충돌남)
+            #box3 {}
+    -->
+    <h2>클래스 선택자1</h2>
+    <div class="box1">
+        <h3>클래스 영역1</h3>
+    </div>
+    <hr>
+    <h2>클래스 선택자2</h2>
+    <div class="box1">
+        <h3>클래스 영역2</h3>
+    </div>
+    <hr>
+    <!-- 아이디는 문서 내에 단 하나만 사용 가능^^ -->
+    <h2>아이디 선택자3</h2>
+    <div id="box3">
+        <h3>아이디 영역3</h3>
+    </div>
+</body>
+</html>

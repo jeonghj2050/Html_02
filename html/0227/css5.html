@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>영역의 변화</title>
+    <style>
+        div{
+            width: 400px;
+            height: 100px;
+            color: blue;
+            background-color: #B2CCFF; 
+            opacity: 0.9;
+        }
+        div:hover{
+            width: 800px;
+            height: 50px;
+            color: red;
+            background-color: #FFD9FA; 
+            opacity: 0.2;
+            transition: all 1.5s linear 0.5s; /* 1.5초동안 0.5초 간격으로 변화 */
+        } 
+    </style>
+</head>
+<body>
+    <h2>가상선택자</h2>
+    <div>
+        가상클래스를 이용한 애니메이션 효과<br>
+        마우스가 위에 있으면 박스가 투명 등등...
+    </div>
+</body> 
+</html>
