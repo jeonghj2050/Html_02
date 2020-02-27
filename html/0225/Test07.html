@@ -1,0 +1,68 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>폼 태그 종류</title>
+    </head>
+    <body>
+        <h2>폼 양식을 만드는 태그1</h2>
+        <form method="get" action="Test01.jsp" name="loginForm" >
+            <input type="hidden" value="hidden" >
+            아이디 : <input type="text" name="id" size="15" required><br>
+            패스워드 : <input type="password" name="password" placeholder="비밀번호" required><br>
+            이름 : <input type="text" name="sname" ><br>
+            나이 : <input type="text" name="sage" value="23" readonly disabled><br>
+            입력내용 : <input type="text" name="content" value="내용을 입력하세요~" autofocus><br>
+            <hr>
+            <h2>본문 내용 : 긴 글자를 작성</h2>
+            <hr>
+            <textarea name="longContent" cols="50" rows="5">
+    
+            </textarea><br>
+            <hr>
+            <h2>라디오 radio 입력 - 단일 선택</h2>
+            당신의 혈액형<br>
+            <input type="radio" name="pee" value="A">A형
+            <input type="radio" name="pee" value="B" checked>B형
+            <input type="radio" name="pee" value="O">O형
+            <input type="radio" name="pee" value="AB">AB형<br>
+    
+            RH <br>
+            <input type="radio" name="peeRh" value="plus" checked> RH+
+            <input type="radio" name="peeRh" value="minus"> RH-
+    
+            <h2>체크박스 checkbox 입력 - 복수 선택</h2>
+            취미(복수 선택 가능) <br>
+            <input type="checkbox" name="hobby" value="game">게임하기
+            <input type="checkbox" name="hobby" value="music">음악듣기
+            <input type="checkbox" name="hobby" value="baseball">야구보기
+            <input type="checkbox" name="hobby" value="sleep">잠자기
+            <hr>
+            <h2>선택 목록 : 펼침 목록</h2>
+            관심있는 주제를 선택<br>
+            <select name="subjects" multiple>
+                <option value="1">HTML5</option>
+                <option value="2">CSS</option>
+                <option value="3">Java</option>
+                <option value="4">JQuery</option>
+                <option value="5">Javascript</option>
+                <option value="6">Jsp/Servlet</option>
+                <option value="7">Oracle</option>
+                <option value="8">Spring</option>
+            </select><br>
+            <hr>
+            <input type="color">
+            <hr>
+            <h2>그래프</h2>
+            김소진 : <meter value="10" min="0" max="100" optimum="50">60 out of 100</meter>
+            프로그레서 : <progress value="22" max="100" title="진행율"></progress>
+            <hr>
+            <input type="file"><br>
+            <hr>
+            <input type="range" name="point" min="0" max="100">
+            <hr>
+            <input type="reset" value="취소">
+            <input type="submit" value="로그인">
+        </form>
+    </body>
+    </html>

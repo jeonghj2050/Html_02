@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <center>
+        <form action="" method="GET">
+            <table border="1" width="700">
+                <tr>
+                    <td colspan="2" bgcolor="#CEF279" align="center">회원 기본 정보</td>
+                </tr>
+                <tr>
+                    <td>아이디</td>
+                    <td>
+                        <input type="text" name="id">
+                        4~12자의 영문 대소문자의 숫자로만 입력
+                    </td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td>
+                        <input type="password" name="password">
+                        4~12자의 영문 대소문자의 숫자로만 입력
+                    </td>
+                </tr>
+                <tr>
+                    <td>비밀번호 확인</td>
+                    <td>
+                        <input type="password" name="rePassword">
+                    </td>
+                </tr>
+                <tr>
+                    <td>메일주소</td>
+                    <td>
+                        <input type="email" name="email">예)qjrm52@naver.com
+                    </td>
+                </tr>
+                <tr>
+                    <td>이름</td>
+                    <td>
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" bgcolor="#CEF279" align="center">개인 신상 정보</td>
+                </tr>
+                <tr>
+                    <td>메일주소</td>
+                    <td>
+                        <input type="text" name="resNumber">예)000000-0000000
+                    </td>
+                </tr>
+                <tr>
+                    <td>생일</td>
+                    <td>
+                        <input type="text">년
+                        <select name="month">
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                        </select>월
+                        <select name="da">
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                        </select>일
+                    </td>
+                </tr>
+                <tr>
+                    <td>관심분야</td>
+                    <td>
+                        <input type="checkbox" name ="hobby" value="1">컴퓨터
+                        <input type="checkbox" name ="hobby" value="2">인터넷
+                        <input type="checkbox" name ="hobby" value="3">여행
+                        <input type="checkbox" name ="hobby" value="4">영화감상
+                        <input type="checkbox" name ="hobby" value="5">음악감상
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td>자기소개</td>
+                    <td>
+                        <textarea name="introduce" id="" cols="50" rows="10"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" name="regist" value="회원가입">
+            <input type="reset" name="reset" value="다시입력">
+        </form>
+    </center>
+
+</body>
+</html>
